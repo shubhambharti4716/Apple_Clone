@@ -1,0 +1,1605 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* This is for the top-most navbar */
+.navigation1 {
+    overflow: hidden;
+    position:sticky;
+    top:0;
+    left: 0;
+    background-color: #000000CC;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 44px;
+    z-index: 1;
+}
+
+.navigation1 .large-screen {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 3vw;
+}
+
+.navigation1 .small-screen {
+    display: none;
+}
+
+.navigation1 ul {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+}
+
+.navigation1 li {
+    font-weight: 400;
+    color: #86868B;
+}
+
+.navigation1 a {
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:700px) {
+    .navigation1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navigation1 .large-screen {
+        display: none;
+    }
+
+    .navigation1 .small-screen {
+        padding: 0vw 5vw;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation1 .small-screen>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    .navigation1 .small-screen>div>div {
+        border: 2px solid gray;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5px;
+    }
+
+    .navigation1 .small-screen>div>div .line {
+        position: absolute;
+        height: 1px;
+        width: 1.3rem;
+        background: #fff;
+    }
+
+    .navigation1 .small-screen>div>div .line-top {
+        margin-top: 7px;
+    }
+
+    .navigation1 .small-screen>div>div .line-bottom {
+        margin-top: 15px;
+    }
+}
+
+/* This is for the 2nd navbar which is present just below the main navbar */
+#navigation2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    padding-top: 10px;
+    background-color: #FBFBFD;
+}
+
+#navigation2>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#navigation2>div ul {
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#navigation2>div li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75px;
+}
+
+#navigation2>div .new {
+    color: #BF4800;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9rem;
+    letter-spacing: -0.08px;
+}
+
+#navigation2>div a {
+    text-decoration: none;
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.12px;
+}
+
+/* This is for the section bar which consist of three parts */
+section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'SF Pro Display', sans-serif;
+    width: 98vw;
+}
+
+/* This is for the 1st part of section which is iPhone 14 */
+
+#section1>div:nth-child(1)>div {
+    padding-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15vh;
+}
+
+#section1 #iphone14 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+#section1 h2 {
+    text-align: center;
+    margin: 2vh 0vh;
+    color: #6E6E73;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.374px;
+    gap: 3px;
+}
+
+#section1 #iphone14 p {
+    height: 10vh;
+    margin: 6vh 0vh;
+}
+
+#section1 #iphone14 b {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2CA2B4 0%, #5598DE 24%, #7F87FF 45%, #F65AAD 76%, #EC3D43 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 10vh;
+    letter-spacing: -0.144px;
+}
+
+#section1 span {
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 3.7vh;
+    letter-spacing: 0.2px;
+
+}
+
+#section1 ul {
+    margin:8vh 0vh 0vh 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.2vw;
+}
+
+#section1 #iphone14 li:nth-child(1) a {
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 980px;
+    background: #0071E3;
+    text-decoration: none;
+}
+
+#section1 #iphone14 li:nth-child(2) a {
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.23rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+    text-decoration: none;
+}
+
+#section1>div>div>img {
+    width: 100%;
+    height: auto;
+}
+
+/* This is for 2nd part of section which is iPhone 14 Pro */
+
+#section1>div:nth-child(2) {
+    display: flex;
+    padding-top: 15vh;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#section1>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    color: white;
+}
+
+#section1>div:nth-child(2) #iphone14pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SF Pro Display', sans-serif;
+    gap: 2vh;
+}
+
+#section1 #iphone14pro p {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin: 2vh 0vh;
+}
+
+#section1 #iphone14pro b {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FFB6FF 0%, #B344FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 3rem;
+    letter-spacing: -0.144px;
+}
+
+#section1 #iphone14pro li:nth-child(1) a {
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    flex-shrink: 0;
+    border-radius: 980px;
+    background: #0071E3;
+    text-decoration: none;
+}
+
+#section1 #iphone14pro li:nth-child(2) a {
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.23rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+    text-decoration: none;
+}
+
+/* This is for 3rd part in section which is iphone SE */
+
+#section1>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1>div:nth-child(3)>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:7vw;
+}
+
+#section1 #iphoneSE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+#section1 #iphoneSE p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#section1 #iphoneSE b {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(90deg, #1E3791 0%, #2948B1 40%, #3153C6 55%, #385FDA 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 3rem;
+    letter-spacing: -0.144px;
+}
+
+#section1 #iphoneSE li:nth-child(1) a {
+    color: white;
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 980px;
+    background: #0071E3;
+    text-decoration: none;
+}
+
+#section1 #iphoneSE li:nth-child(2) a {
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.23rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+    text-decoration: none;
+}
+
+#section1>div>div>div:nth-child(2)>img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:700px) {
+    #section1>div:nth-child(3)>div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap:wrap;
+    }
+
+    #section1 span {
+        margin: auto;
+        text-align: center;
+        height: auto;
+        font-size: 1.3rem;
+        line-height: 4.7vh;
+        letter-spacing: 0.2px;
+    }
+
+}
+
+/* This is for 2nd section which is Guided Tour of iPhone 14 And iPhone 14 pro */
+
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2.64vw 1vh 2.64vw;
+    width:100%;
+    height: 100%;
+}
+#section2>div:first-child {
+    height:100vh;
+    width:100%;
+    background-image: url('./Assets/guidedtour.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+}
+#section2>div>div{
+    display: flex;
+    padding-top: 20vh;
+    padding-left: 15vw;
+
+}
+#section2>div>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8vh;
+}
+
+#section2 #guidedtour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 2.8vh;
+}
+
+#section2 #guidedtour>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1vh;
+}
+
+#section2 #guidedtour b {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.05rem;
+    letter-spacing: -0.144px;
+}
+
+#section2 #guidedtour span {
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.65rem;
+    letter-spacing: 0.216px;
+}
+
+#section2 #guidedtour>p a{
+    padding: 1vh 2vw;
+    border-radius: 980px;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.6%;
+    /* shubham */
+    letter-spacing: -0.374px;
+}
+
+/* This is for the comparison section */
+#section3 {
+    display: flex;
+    justify-content: center;
+}
+
+#section3>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2vh;
+    padding:15vh 0vh;
+}
+
+#section3>div>p {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.05rem;
+    letter-spacing: -0.144px;
+}
+@media only screen and (max-width:800px){
+    #section3>div>div{
+        width:100vw;
+        overflow-x: scroll;
+    }
+}
+#section3 th>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6.5vh;
+    border-bottom: 2px solid #D2D2D7;
+}
+
+#section3 .dev1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+#section3 .dev2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3vh 0vh 2.6vh 0vh;
+    gap: 2.6vh;
+}
+
+#section3 table {
+    border-collapse: separate;
+    border-spacing:45px 50px;
+}
+
+#section3 .dev1 span {
+    color: #BF4800;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: -0.12px;
+}
+
+#section3 .dev1 p {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.374px;
+}
+
+#section3 .dev2 p {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.2rem;
+    letter-spacing: -0.224px;
+}
+
+
+#section3 .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section3 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.3vh;
+}
+
+#section3 .dev2 li {
+    margin: 20px 0px;
+}
+
+#section3 .dev2 li:nth-child(1) a {
+    text-decoration: none;
+    padding: 5px 12px 5px 12px;
+    background: #0071E3;
+    color: white;
+    border-radius: 900px;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: -0.12px;
+}
+
+#section3 .dev2 li:nth-child(2) a {
+    text-decoration: none;
+    padding: 5px 12px 5px 12px;
+    color: #0071E3;
+    border-radius: 900px;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: -0.12px;
+}
+
+#section3 p {
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: -0.224px;
+}
+
+#section3 .head {
+    color: #1D1D1F;
+}
+
+#section3 .content {
+    color: #6E6E73;
+}
+
+#section3 .lastrow {
+    padding-bottom: 40px;
+    border-bottom: 2px solid #D2D2D7;
+}
+
+#section3>div>ul>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#section3>div>ul>div>li>a {
+    text-decoration: none;
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+
+/* This is for 4th section which is give WOW */
+
+#section4 {
+    display: flex;
+    width:100%;
+    padding: 4vh 3.5vw 2vh 3.5vw;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+#section4>div {
+    width:100%;
+    background: #01012A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4>div>div {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 2.6vh 0vh;
+}
+@media only screen and (max-width:600px){
+    #section4>div>div{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap:5vh;
+    }
+}
+
+#section4>div>div>figure img {
+    width: 100%;
+    height: auto;
+}
+
+#section4 #wow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4 #wow #wow-head {
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 4.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.3rem;
+    letter-spacing: -0.27px;
+}
+
+#section4 #wow #wow-content {
+    color: #2997FF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+/* This is for 5th section which is ways to buy iPHONE*/
+
+#section5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 13vh 1.5vw 2.6vh 1.5vw;
+    background: #f2f2f2;
+}
+
+#section5,
+#section6>p {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: -0.28px;
+}
+
+#section5>div {
+    display: flex;
+    padding: 6.5vh 0vw 4vh 0vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+#section5>div>div{
+    background: white;
+    width:100%;
+}
+#section5 #div1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10.5vh;
+    padding: 7.3vh 0vh;
+    background: white;
+}
+
+#section5 #div1>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3vh;
+}
+
+#section5 #div1>div:nth-child(1)>p:nth-child(1) {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.65rem;
+    letter-spacing: 0.216px;
+}
+
+#section5 #div1>div:nth-child(1)>p:nth-child(2) {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.06rem;
+    letter-spacing: -0.144px;
+}
+
+#section5 #div1>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#section5 #div1>div:nth-child(2)>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3vh 1.8vw;
+    gap: 1.3vh;
+}
+
+#section5 #div1>div:nth-child(2)>div>p {
+    color: #6E6E73;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+#section5 #div1>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9.1vh;
+}
+
+#section5 #div1>div:nth-child(3)>p:nth-child(1) {
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 15px 31px 15px 31px;
+    color: #FFF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: -0.374px;
+}
+
+#section5 #div1>div:nth-child(3)>p:nth-child(2) {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.374px;
+}
+
+#section5 #div1>div:nth-child(3)>p:nth-child(2)>a {
+    text-decoration: none;
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.374px;
+}
+
+#section5 #div2 {
+    width:100%;
+    padding: 3.9vh 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6vw;
+    background: #f2f2f2;
+    flex-wrap:wrap;
+}
+
+#section5 #div2>div {
+    padding: 2.6vh 0vh 0vh 0vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 570px;
+    height: 750px;
+}
+
+#section5 #div2>div>div {
+    padding-top: 3.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section5 .top,
+#section6 .top,
+#section8 .top {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.06rem;
+    letter-spacing: -0.144px;
+}
+
+#section5 .middle,
+#section6 .middle,
+#section8 .middle {
+    margin: 2.6vh 0vh;
+    color: #1D1D1F;
+    text-align:center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71rem;
+    letter-spacing: 0.231px;
+}
+
+#section5 .bottom a,
+#section6 .bottom a,
+#section8 .bottom a {
+    text-decoration: none;
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71rem;
+    letter-spacing: 0.231px;
+}
+
+#section5 #div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: url('./Assets/apple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 69%;
+}
+
+#section5 #div3>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:600px){
+    #section5>div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    #section5 #div2>div:nth-child(1){
+        gap:10vh;
+    }
+    #section5 #div2>div:nth-child(2) img{
+        max-width: 100%;
+        max-height:fit-content;
+    }
+}
+/* This is for 6th section which is Featured Accessories */
+
+#section6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    width:100%;
+    padding:17vh 1.5vw 2.6vh 1.5vw;
+}
+
+#section6>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.9vh 0vh;
+    gap: 20px;
+    width:100%;
+}
+
+#section6>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    flex-wrap: wrap;
+}
+
+#section6>div>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section6 img{
+    width:100%;
+    height: auto;
+}
+
+#section6>div>div:nth-child(1) {
+    margin-top: 50px;
+    padding: 60px 0px 0px 0px;
+    gap: 50px;
+}
+
+#section6>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#section6>div>div:nth-child(2)>div:nth-child(1){
+    padding:7vh 0vh;
+}
+#section6 ul {
+    display: flex;
+    gap: 30px;
+}
+
+#section6>div>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+/* This is for 7th section which is Fast Delivery, EMI, Customer Support */
+
+#section7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background: #f2f2f2;
+}
+
+#section7>div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+#section7>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 50px 20px 50px;
+}
+
+#section7 .top {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+#section7 .middle,
+#section9 .middle {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+#section7 .bottom a,
+#section9 .bottom a {
+    text-decoration: none;
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+/* This is for 8th section which is What makes an iPhone an iPhone */
+
+#section8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width:100%;
+    padding-top: 150px;
+    background: #f2f2f2;
+}
+
+#section8 .head,
+#section9 .head {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.53rem;
+    letter-spacing: -0.28px;
+}
+
+#section8>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#section8>div>div:nth-child(1) {
+    background: url('./Assets/whatmakesiphone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70.3vh;
+    width: 90.7vw;
+    padding-top: 70px;
+}
+
+#section8>div>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section8>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top: 10.5vh;
+    padding-bottom: 2.6vh;
+    gap: 20px;
+}
+#section8 img{
+    width:100%;
+    background-size: cover;
+    height: auto;
+}
+/* This is for section 9 which is Get more out of an iPhone */
+
+#section9 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 40px;
+    background: #f2f2f2;
+    flex-wrap: wrap;
+}
+
+#section9>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#section9>div>div:nth-child(1) {
+    /* border: 1px shubh; */
+    padding:15vh 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90.7vw;
+    height: auto;
+    gap: 30px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+#section9 .main-img{
+    width:100%;
+    height: auto;
+}
+
+#section9>div>div:nth-child(1)>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 30px;
+}
+#section9 .apple-one-content {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.65rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.88rem;
+    letter-spacing: 0.196px;
+}
+
+#section9 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#section9 li>a {
+    color: #06C;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+#section9>div>div:nth-child(2),
+#section9>div>div:nth-child(3),
+#section9>div>div:nth-child(4) {
+    height: auto;
+    width: 93.7vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#section9>div>div:nth-child(2)>div,
+#section9>div>div:nth-child(4)>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 690px;
+    max-width: 610px;
+    background: white;
+}
+#section9>div>div:nth-child(3)>div{
+    min-height: 690px;
+    max-width: 610px;
+    flex-wrap: wrap;
+}
+
+#section9>div>div:nth-child(2)>div:nth-child(1) {
+    background: #000;
+}
+
+#section9>div>div:nth-child(2)>div:nth-child(2) {
+    background: white;
+}
+
+#section9>div>div:nth-child(2)>div:nth-child(1)>div,
+#section9>div>div:nth-child(3)>div:nth-child(1)>div {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: #F5F5F7;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+    gap: 20px;
+}
+
+#section9>div>div:nth-child(2)>div:nth-child(2)>div,
+#section9>div>div:nth-child(3)>div:nth-child(2)>div,
+#section9>div>div:nth-child(4)>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+    gap: 20px;
+}
+
+#section9>div>div:nth-child(2) li a,
+#section9>div>div:nth-child(4) li a {
+    text-decoration: none;
+    color: #2997FF;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+#section9>div>div:nth-child(3)>div:nth-child(1) {
+    background: url('./Assets/applenews.jpg');
+    background-size: cover;
+}
+
+#section9>div>div:nth-child(3)>div:nth-child(2) {
+    background: url('./Assets/appleplay.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section9>div>div:nth-child(3)>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;    
+    min-height: 690px;
+    width:620px !important; 
+    max-width: 90vw;
+    flex-wrap: wrap;
+
+}
+
+#section9>div>div:nth-child(3)>div:nth-child(1)>div a {
+    color: #F5F5F7;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 1.24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.231px;
+}
+
+#section9>div>div:nth-child(5) {
+    padding-top:5vh;
+    min-height: 70vh;
+    width: 90.7vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 10px;
+    background: white;
+}
+
+#section9>div>div:nth-child(5)>div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+}
+
+#section9>div>div:nth-child(5) .top {
+    color: #1D1D1F;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 2.82rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.06rem;
+    letter-spacing: -0.144px;
+}
+
+/* This is for footer section  */
+footer {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 0vh 17.5vw;
+    color: #6E6E73;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    gap: 2.6vh;
+}
+
+footer>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.3vh;
+}
+
+footer>div:nth-child(1)>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0.7vw;
+    gap: 1.3vh;
+}
+footer>div:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+    gap: 1.5vw;
+    border-top: 1px solid #D2D2D7;
+}
+
+footer>div:nth-child(2) p {
+    padding-left: 1.5vw;
+    color: #424245;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+footer>div:nth-child(3) {
+    width: 70vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+footer>div:nth-child(3)>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 10rem;
+    gap: 3.9vh;
+    flex-wrap: wrap;
+}
+
+footer>div:nth-child(3)>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vh;
+    flex-wrap: wrap;
+}
+
+footer>div:nth-child(3) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vh;
+}
+
+footer>div:nth-child(3) ul a {
+    text-decoration: none;
+    color: #424245;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+footer>div:nth-child(3) .head a {
+    text-decoration: none;
+    color: #1D1D1F;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1rem;
+    letter-spacing: -0.12px;
+}
+
+footer>div:nth-child(4) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 63vw;
+    padding: 20px 0px;
+}
+
+footer>div:nth-child(4)>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    width: 62.2vw;
+}
+
+footer>div:nth-child(4)>div:nth-child(1) {
+    color: #6E6E73;
+    font-family: SF Pro Display;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+    border-bottom: 1px solid #D2D2D7;
+}
+
+footer>div:nth-child(4)>div:nth-child(1) a {
+    text-decoration: none;
+    color: #06c;
+}
+
+footer>div:nth-child(4)>div:nth-child(2) ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.1vw;
+}
+
+footer>div:nth-child(4)>div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer>div:nth-child(4)>div:nth-child(2)>div ul li {
+    padding: 0vh 1.1vw;
+}
+
+footer>div:nth-child(4)>div:nth-child(2)>div ul li:nth-child(n+2) {
+    border-left: 1px solid #D2D2D7;
+}
